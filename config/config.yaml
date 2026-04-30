@@ -1,17 +1,17 @@
 pepfile: config/pep/config.yaml
 
 ## this will be used as name for the results folder and can be found in the report
-run-name: "sra_kpneumoniae_test"
+run-name: "srr26321896_test"
 
 ## Option for the auto-creation of the sample sheet
 sample-sheet:
   # False or True : Should the sample sheet be auto-created?
-  auto-creation: True
+  auto-creation: False
   # False or True : Should the sample fastqs be renamed?
   # e.g. from sampleID_S40_L001_R1_001.fastq.gz to sampleID_R1.fastq.gz
   rename-sample-files: False
   # path to the fastq files of the samples for the sample sheet
-  data-path: "/data/raw"
+  data-path: "data/raw"
 
 data-handling:
   # path to store input fastq data within the workflow
@@ -19,10 +19,14 @@ data-handling:
   # path to store databases and reference genomes used within the workflow
   resources: "resources/"
 
+
+threads:
+  kaiju: 8
+
 kaiju-db:
   use-local: True
   # path to a locally stored kaiju database
-  local-archive: "/groups/ds/databases_refGenomes/databases/latest/kaiju/refseq_nr/kaiju_db_refseq_nr_2023-06-17.tgz"
+  local-archive: "/groups/ds/databases_refGenomes/databases/latest/kaiju/refseq_nr/kaiju_db_refseq_nr_2024-08-13.tgz" 
   # if use-local = False the kaiju database will be downloaded:
   download-path: "https://kaiju-idx.s3.eu-central-1.amazonaws.com/2024/kaiju_db_refseq_nr_2024-08-13.tgz"
   # expected files after unpacking
