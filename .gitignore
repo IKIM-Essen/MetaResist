@@ -26,7 +26,7 @@ resources/tmp/
 # Ignore Snakemake internals and runtime outputs
 .snakemake/
 logs/
-results/
+#results/
 report/
 reports/
 benchmark/
