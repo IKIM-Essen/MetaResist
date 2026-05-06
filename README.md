@@ -42,13 +42,13 @@ Second, to clone the full workflow run:
 
 ### Step 3: Install required tools
 
-Install <sra-tools> for downloading SRA samples:
+Install *sra-tools* for downloading SRA samples:
 
 ```sh
     mamba install -c bioconda -c conda-forge sra-tools
 ```
 
-Install <peppy> for handling PEP-based sample metadata:
+Install *peppy* for handling PEP-based sample metadata:
 
 ```sh
     mamba install -c conda-forge -c bioconda peppy
@@ -60,7 +60,7 @@ Example SRA runs used for initial testing:
 
 - SRR26321896 (*Klebsiella pneumoniae*)
 
-Download the sample using <prefetch> and convert it to FASTQ format with <fasterq-dump> :
+Download the sample using *prefetch* and convert it to FASTQ format with *fasterq-dump* :
 
 ```sh
     prefetch SRR26321896
