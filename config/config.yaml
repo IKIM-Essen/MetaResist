@@ -1,7 +1,7 @@
 pepfile: config/pep/config.yaml
 
 ## this will be used as name for the results folder and can be found in the report
-run-name: "srr26321896_test"
+run-name: "SRR26321925"
 
 ## Option for the auto-creation of the sample sheet
 sample-sheet:
